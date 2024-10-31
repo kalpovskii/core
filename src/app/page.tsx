@@ -1,10 +1,11 @@
-import {Button} from "@/components/ui/button";
+import { CoursesList } from "@/features/courses-list/pub/courses-list";
+import { CreateCourseForm } from "@/features/courses-list/pub/create-course-form";
 
-
-export default function Home() {
+export default async function Home() {
   return (
-    <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-      <Button>button</Button>
+    <main className="flex flex-col gap-8 row-start-2 sm:items-start">
+      <CreateCourseForm revalidatePagePath="/" className="max-w-[300px]" />
+      <CoursesList revalidatePagePath="/" />
     </main>
   );
 }
