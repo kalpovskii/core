@@ -9,6 +9,7 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { useTransition } from "react";
+import { CourseListElement } from "../model/types";
 
 export function CourseItem({
   course,
